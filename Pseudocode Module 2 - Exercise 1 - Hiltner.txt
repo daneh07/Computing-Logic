@@ -1,0 +1,18 @@
+start
+	Declarations
+		string model
+		num height
+		num width
+		num depth
+		num capacity
+	output "Please enter refrigerator model "
+	input model
+	output "Please enter refrigerator height in inches "
+	input height
+	output "Please enter refrigerator width in inches "
+	input width
+	output "Please enter refrigerator depth in inches "
+	input depth
+	capacity = (height * width * depth) / 1728
+	output "The refrigerator capacity for ", model " is ", capacity " cubic feet."
+stop
