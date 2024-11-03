@@ -1,0 +1,17 @@
+start
+	Declarations
+		num accountBalance
+		num overDrawnFee
+		num timesOverDrawn
+		num finalAccountBalance
+	output "Please enter the Account Balance: $"
+	input accountBalance
+	output "Please enter the Number of times the Account was Overdrawn: "
+	input timesOverDrawn
+	overDrawnFee = (accountBalance * .01) - (5 * timesOverDrawn)
+	finalAccountBalance = accountBalance - overDrawnFee
+	output "The fee that has been assessed is $",overDrawnFee
+	output "The new Account Balance is $", finalAccountBalance
+	output "Thanks for using this program."
+stop
+	
